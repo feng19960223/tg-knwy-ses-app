@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F6F7"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#F5F6F7"
+        android:text="选择系统工作模式"
+        android:textColor="#5FB9F5"
+        android:textSize="17dp" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_pattern"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_bar"
+        android:background="#F5F6F7">
+
+        <ImageView
+            android:background="#FFFFFF"
+            android:id="@+id/iv_common_mode"
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:src="@mipmap/common_mode" />
+
+        <ImageView
+            android:background="#FFFFFF"
+            android:id="@+id/iv_economic_mode"
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:src="@mipmap/economical_mode" />
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="2"
+        android:id="@+id/ll_pattern_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ll_pattern"
+        android:background="#F5F6F7">
+
+        <ImageView
+            android:background="#FFFFFF"
+            android:id="@+id/iv_spare_mode"
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:src="@mipmap/spare_mode" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_pattern"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/common_mode"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="通用模式" />
+
+        <RadioButton
+            android:id="@+id/economic_mode"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="经济模式" />
+        <RadioButton
+            android:id="@+id/spare_mode"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="备用模式" />
+    </RadioGroup>
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include layout="@layout/common_view_selector" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowActionBar">true</item>
+        <item name="android:windowNoTitle">false</item>
+    </style>
+    <style name="Theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="empty_img">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+    <style name="bg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#F0F0F0</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <attr name="sb_shadow_radius" format="reference|dimension"/>       阴影半径
+    <attr name="sb_shadow_offset" format="reference|dimension"/>       阴影偏移
+    <attr name="sb_shadow_color" format="reference|color"/>            阴影颜色
+    <attr name="sb_uncheck_color" format="reference|color"/>           关闭颜色
+    <attr name="sb_checked_color" format="reference|color"/>           开启颜色
+    <attr name="sb_border_width" format="reference|dimension"/>        边框宽度
+    <attr name="sb_checkline_color" format="reference|color"/>         开启指示器颜色
+    <attr name="sb_checkline_width" format="reference|dimension"/>     开启指示器线宽
+    <attr name="sb_uncheckcircle_color" format="reference|color"/>     关闭指示器颜色
+    <attr name="sb_uncheckcircle_width" format="reference|dimension"/> 关闭指示器线宽
+    <attr name="sb_uncheckcircle_radius" format="reference|dimension"/>关闭指示器半径
+    <attr name="sb_checked" format="reference|boolean"/>               是否选中
+    <attr name="sb_shadow_effect" format="reference|boolean"/>         是否启用阴影
+    <attr name="sb_effect_duration" format="reference|integer"/>       动画时间，默认300ms
+    <attr name="sb_button_color" format="reference|color"/>            按钮颜色
+    <attr name="sb_show_indicator" format="reference|boolean"/>        是否显示指示器，默认true：显示
+    <attr name="sb_background" format="reference|color"/>              背景色，默认白色
+    <attr name="sb_enable_effect" format="reference|boolean"/>         是否启用特效，默认true
+    <style name="AppTheme1" parent="AppTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <!-- 启动时页面为透明色，避免显示空白页 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 实际就是加载透明的背景 -->
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <!-- 设置启动背景图片，避免显示空白页 -->
+        <item name="android:windowBackground">@drawable/wellcome</item>
+        <!-- 隐藏标题栏 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 隐藏状态栏 -->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="TabLayoutTextStyle">
+        <item name="android:textColor">@color/text_color_selector</item>
+    </style>
+</resources>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F6F7"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#3BC495"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:text="经济模式："
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5F6F7"
+            android:padding="5dp"
+            android:text="根据电网价格不同的时间段之差异，设置不同的时间段买卖电。用此功能请依当地的法律规定。" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F6F7"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#F5F6F7">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="充电开始时间" />
+
+                    <TimePicker
+                        android:id="@+id/tp_startcharge"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:timePickerMode="spinner" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="充电结束时间" />
+
+                    <TimePicker
+                        android:id="@+id/tp_endcharge"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:timePickerMode="spinner" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="3"
+                android:text="充电功率" />
+
+            <EditText
+                android:id="@+id/et_charge_power_percentage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_weight="3"
+                android:background="@drawable/text_view_border"
+                android:digits="0123456789"
+                android:gravity="center"
+                android:maxLength="3"
+                android:text="60" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:text="%" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="放电开始时间" />
+
+                    <TimePicker
+                        android:id="@+id/tp_startdischarge"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:timePickerMode="spinner" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="放电结束时间" />
+
+                    <TimePicker
+                        android:id="@+id/tp_enddischarge"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:timePickerMode="spinner" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="3"
+                android:text="放电功率" />
+
+            <EditText
+                android:id="@+id/et_discharge_power_percentage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_weight="3"
+                android:background="@drawable/text_view_border"
+                android:digits="0123456789"
+                android:gravity="center"
+                android:maxLength="3"
+                android:text="30" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:text="%" />
+        </LinearLayout>
+
+        <include layout="@layout/common_view_selector" />
+
+    </LinearLayout>
+</LinearLayout>

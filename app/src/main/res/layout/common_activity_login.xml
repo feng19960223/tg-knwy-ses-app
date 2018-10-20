@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_view_top_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="30dp"
+            android:src="@mipmap/profile_photo" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:text="安装商"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:src="@mipmap/password"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_margin="3dp"
+            android:layout_width="1dp"
+            android:background="#E2E8ED"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:hint="登录密码"
+            android:text="bjcorona"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:padding="3dp" />
+    </LinearLayout>
+    <include layout="@layout/common_view_split_line_gray"/>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/btn_login"
+        android:background="#2183D3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:layout_marginRight="10dp"
+        android:text="登录" />
+</LinearLayout>

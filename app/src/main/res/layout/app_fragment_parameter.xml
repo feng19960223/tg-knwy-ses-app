@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_view_top_bar" />
+
+    <LinearLayout
+        android:id="@+id/panel_parameter"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:src="@mipmap/parameter_panel" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="面板"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <include layout="@layout/common_view_split_line_gray" />
+
+    <LinearLayout
+        android:id="@+id/output_parameter"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:src="@mipmap/parameter_grid" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="电网"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <include layout="@layout/common_view_split_line_gray" />
+
+    <LinearLayout
+        android:id="@+id/battery_parameter"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:src="@mipmap/parameter_battery" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="电池"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <include layout="@layout/common_view_split_line_gray" />
+
+    <LinearLayout
+        android:id="@+id/inverter_parameter"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:src="@mipmap/parameter_inverter" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="逆变器"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <include layout="@layout/common_view_split_line_gray" />
+
+    <LinearLayout
+        android:id="@+id/load_parameter"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:src="@mipmap/parameter_backup" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="负载"
+            android:textSize="16dp" />
+    </LinearLayout>
+</LinearLayout>

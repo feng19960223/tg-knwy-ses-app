@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:background="#FFFFFF"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_view_top_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="设备IP配置"
+            android:textColor="#43596B"
+            android:textSize="26dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="IP"
+            android:textColor="#43596B" />
+
+        <TextView
+
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:background="#E2E8ED" />
+
+        <EditText
+            android:id="@+id/et_ip"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:digits="0123456789."
+            android:maxLength="15"
+            android:padding="3dp"
+            android:text="192.168.1.1"
+            android:textColor="#455B6D" />
+    </LinearLayout>
+
+    <include layout="@layout/common_view_split_line_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="端口"
+            android:textColor="#43596B" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:background="#E2E8ED" />
+
+        <EditText
+            android:id="@+id/et_port"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:digits="0123456789"
+            android:maxLength="4"
+            android:padding="3dp"
+            android:text="8899"
+            android:textColor="#455B6D" />
+    </LinearLayout>
+
+    <include layout="@layout/common_view_split_line_gray" />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#2183D3"
+        android:text="确定" />
+</LinearLayout>

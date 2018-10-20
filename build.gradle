@@ -1,0 +1,24 @@
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+    }
+    // 在这里配置好第三方插件后，就可以在Module:app Gradle中apply plugin "XXX"了
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.0' // gradle插件
+    }
+}
+allprojects {
+    repositories {
+        maven { url "http://47.94.19.152:8081/repository/maven-public/" }
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+        // 从api 26开始，support libraries 需要从google的maven仓库下载，所以需要在project的build.gradle中allprojects 添加如下配置即可
+        maven { url "https://maven.google.com" }
+    }
+}
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

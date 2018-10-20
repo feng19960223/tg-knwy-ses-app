@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/common_view_top_bar" />
+
+        <!--        <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="2dp">
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:gravity="center_vertical"
+                        android:text="电池状态" />
+
+                    <TextView
+                        android:id="@+id/tv_batterystatus"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:gravity="center" />
+
+                </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#FFFFFF"
+            android:padding="2dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="5"
+                android:gravity="center_vertical"
+                android:text="电池电压" />
+
+            <TextView
+                android:id="@+id/tv_batteryvoltage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="0.0" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="伏" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#F0F0F1"
+            android:padding="2dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="5"
+                android:gravity="center_vertical"
+                android:text="电池电流" />
+
+            <TextView
+                android:id="@+id/tv_batterycurrent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="0.00" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="安" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#FFFFFF"
+            android:padding="2dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="5"
+                android:gravity="center_vertical"
+                android:text="电池功率" />
+
+            <TextView
+                android:id="@+id/tv_batterypower"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="0.00" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="千瓦" />
+        </LinearLayout>
+
+        <!--       <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginRight="10dp"
+                   android:padding="2dp">
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:layout_weight="5"
+                       android:gravity="center_vertical"
+                       android:text="电池容量" />
+
+                   <TextView
+                       android:id="@+id/tv_batterycapacity"
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:layout_weight="3"
+                       android:gravity="center" />
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:layout_weight="2"
+                       android:gravity="center_vertical"
+                       android:text="%" />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:background="#F0F0F1"
+                   android:padding="2dp">
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:layout_marginLeft="10dp"
+                       android:layout_weight="5"
+                       android:gravity="center_vertical"
+                       android:text="BMS状态" />
+
+                   <TextView
+                       android:id="@+id/tv_BMSstatus"
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:layout_marginRight="10dp"
+                       android:layout_weight="5"
+                       android:gravity="center" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginRight="10dp"
+                   android:padding="2dp">
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:layout_weight="5"
+                       android:gravity="center_vertical"
+                       android:text="健康状况(来自BMS)" />
+
+                   <TextView
+                       android:id="@+id/tv_BMShealthstatus"
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:layout_weight="3"
+                       android:gravity="center" />
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:layout_weight="2"
+                       android:gravity="center_vertical"
+                       android:text="%" />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:background="#F0F0F1"
+                   android:padding="2dp">
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:layout_marginLeft="10dp"
+                       android:layout_weight="5"
+                       android:gravity="center_vertical"
+                       android:text="充电限流(来自BMS)" />
+
+                   <TextView
+                       android:id="@+id/tv_BMS_charge_limit"
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:layout_weight="3"
+                       android:gravity="center" />
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:layout_marginRight="10dp"
+                       android:layout_weight="2"
+                       android:gravity="center_vertical"
+                       android:text="安" />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginRight="10dp"
+                   android:padding="2dp">
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:layout_weight="5"
+                       android:gravity="center_vertical"
+                       android:text="放电限流(来自BMS)" />
+
+                   <TextView
+                       android:id="@+id/tv_BMS_discharge_limit"
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:layout_weight="3"
+                       android:gravity="center" />
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:layout_weight="2"
+                       android:gravity="center_vertical"
+                       android:text="安" />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+
+
+                   android:background="#F0F0F1"
+                   android:padding="2dp">
+
+                   <TextView
+                       android:id="@+id/textView4"
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:layout_marginLeft="10dp"
+                       android:layout_weight="5"
+                       android:gravity="center_vertical"
+                       android:text="电池警告(来自BMS)" />
+
+                   <TextView
+                       android:id="@+id/tv_batterywarring"
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:layout_marginRight="10dp"
+                       android:layout_weight="5"
+                       android:gravity="center" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginRight="10dp"
+                   android:padding="2dp">
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:layout_weight="5"
+                       android:gravity="center_vertical"
+                       android:text="电池温度" />
+
+                   <TextView
+                       android:id="@+id/tv_batterytemperature"
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:layout_weight="3"
+                       android:gravity="center" />
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:layout_weight="2"
+                       android:gravity="center_vertical"
+                       android:text="度" />
+               </LinearLayout>-->
+    </LinearLayout>
+</ScrollView>
